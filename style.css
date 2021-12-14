@@ -1,0 +1,84 @@
+[data-foo]::before {
+    content: attr(data-foo) " ";
+  }
+
+  .demo-box .item {
+    border: 2px solid rgb(245, 229, 3);
+    height: 100px;
+    width: calc(100%/4);
+    float: left;
+    box-sizing: border-box;
+   }
+.gradien{
+    background-image: radial-gradient(yellow, #f06d06);
+}
+.rgba{
+    background-color:rgba(220, 20, 60,0.7);
+}
+.row .col-4{
+    position: relative;
+    width: 25%;
+    float: left;
+    list-style: none;
+}
+.row .col-4 img{
+    width: 250px;
+}
+
+.img-picture {
+    width: 300px;
+    height: 300px;
+}
+.place-img{
+    width: 300px;
+    display: block;
+}
+/* .place-img:hover{
+    opacity: 0.6;
+} */
+.place-body{
+    background-color: #fff;
+    padding: 16px;
+    font-size: 15px;
+}
+.place-heading{
+    font-size: 15px;
+  font-weight: 600;
+
+}
+
+.place-time{
+margin-top: 15px;
+color: #757575;
+}
+.place_dec{
+margin-top: 20px;
+line-height: 2;
+}
+.place-item-1:hover{
+    transform: scale(0.6);
+}
+.place-item-2:hover{
+    transform: skew(15deg);
+}
+.place-item-3:hover{
+    transform: rotate(45deg);
+}
+.place-item-4:hover{
+    transform: translate(100px, 200px);
+}
+@media screen and (max-width:1023px) {
+    .row .col-4{
+        width: 25%;
+    } 
+}
+@media screen and (max-width:766px) {
+    .row .col-4{
+        width: 50%;   
+    } 
+}
+@media screen and (max-width:478px) {
+    .row .col-4{
+        width: 100%;   
+    } 
+}
